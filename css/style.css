@@ -258,6 +258,12 @@ body {
   gap: 20px;
 }
 
+.products_pagination_sorting_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .products_pagination_menu {
   font-size: 14px;
   line-height: 17px;
@@ -283,6 +289,10 @@ body {
   text-decoration: none;
   color: #6f6e6e;
   padding: 10px;
+}
+
+.products_pagination_sorting_links {
+  display: block;
 }
 
 .fa-chevron-down {
