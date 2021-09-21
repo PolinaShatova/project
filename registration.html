@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/132209cb30.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="wrap header_wrap">
+            <div>
+                <a href="index.html" class="header_logo"><img src="img/logo.svg" alt="logo"></a>
+                <a href="#"><img src="img/search.svg" alt="search"></a>
+            </div>
+            <div>
+                <a href="#"><img src="img/menu-icon.svg" alt="menu"></a>
+                <a href="registration.html" class="header_registry"><img src="img/contacts-icon.svg" alt="contacts"></a>
+                <a href="cart.html" class="header_basket"><img src="img/basket-icon.svg" alt="basket"></a>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="catalog_intro">
+        <div class="wrap catalog_intro_wrap">
+            <h3 class="catalog_intro_title"> REGISTRATION</h3>
+
+        </div>
+    </section>
+
+
+    <section class="wrap registration_wrap">
+        <div class="registration_content">
+            <div class="registration_rigth">
+                <div class="registration_fields">
+                    <h3 class="registration_fields_text"> Your Name</h3>
+                    <input class="registration_fields_input" type="text" required maxlength="20" minlength="2"
+                        placeholder="First Name">
+                    <input class="registration_fields_input" type="text" required maxlength="20" minlength="2"
+                        placeholder="Last Name">
+                </div>
+                <p class="registration_fields_text"><input class="registration_fields_radio" name="male" type="radio">
+                    Male
+                    <input class="registration_fields_radio" name="male" type="radio"> Female
+                </p>
+
+                <div class="registration_fields">
+                    <p class="registration_fields_text"> Login details</p>
+                    <input class="registration_fields_input" type="email" required maxlength="30" minlength="2"
+                        placeholder="Email" name="login">
+                    <input class="registration_fields_input" type="password" required maxlength="20" minlength="2"
+                        placeholder="Password" name="pass">
+                </div>
+                <p class="registration_fields_text_mini">Please use 8 or more characters, with at least 1 number and a
+                    mixture of
+                    uppercase and lowercase letters</p>
+
+                <div class="registration_button"> <a href="#" class="registration_link">JOIN NOW <i
+                            class="fas fa-long-arrow-alt-right"></i>
+
+                    </a>
+                </div>
+            </div>
+
+            <div class="registration_left">
+                <p class="registration_left_text">LOYALTY HAS ITS PERKS</p>
+                <p class="registration_left_text">Get in on the loyalty program where you can earn points and unlock
+                    serious perks. Starting with these
+                    as soon as you
+                    join:</p>
+                <!-- <p class="registration_left_text"><i class="fas fa-check"></i> 15% off welcome offer</p> -->
+                <ul class="registration_lists">
+                    <li class="registration_list"><i class="fas fa-check"></i> 15% off welcome offer</li>
+                    <li class="registration_list"><i class="fas fa-check"></i>Free shipping, returns and exchanges on
+                        all orders</li>
+                    <li class="registration_list"><i class="fas fa-check"></i>$10 off a purchase on your birthday</li>
+                    <li class="registration_list"><i class="fas fa-check"></i>Early access to products</li>
+                    <li class="registration_list"><i class="fas fa-check"></i>Exclusive offers & rewards</li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="connection">
+        <div class="wrap connection_wrap">
+
+            <div class="connection_review">
+                <img src="img/review.png" alt="photo" class="connection_review_pic">
+                <p class="connection_review_text">“Vestibulum quis porttitor dui! Quisque <br> viverra nunc mi, a
+                    pulvinar
+                    purus <br> condimentum“</p>
+            </div>
+
+            <div class="connection_subscribe">
+                <h3> <span class="connection_subscribe_title">SUBSCRIBE</span> <br>
+                    <span class="connection_subscribe_text">FOR OUR NEWLETTER AND PROMOTION</span>
+                </h3>
+
+                <form action="#" class="subscribe">
+
+                    <input class="subscribe_field" type="email" minlength="3" placeholder="Enter Your Email" required>
+                    <input class="subscribe_button" type="submit" value="subscribe" required>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrap footer_wrap">
+            <div class="footer_text">
+                <p>&copy; 2021 Brand All Rights Reserved.</p>
+            </div>
+            <div class="footer_logo">
+                <a class="footer_logo_link" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="footer_logo_link" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="footer_logo_link" href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a class="footer_logo_link" href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

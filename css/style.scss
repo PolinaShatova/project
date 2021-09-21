@@ -233,6 +233,11 @@ body {
 //   margin-bottom: 98px;
 }
 
+.products_list_link {
+    text-decoration: none;
+    background: #f8f8f8;
+}
+
 .products_sidebar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -245,6 +250,7 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
     transition: 0.4s;
+    z-index: 1000;
 }
 
 .products_sidebar_filter[open] {
@@ -253,7 +259,11 @@ body {
 
 }
 .products_sidebar_filter[open] .products_sidebar_title {
-    color: $pink
+    color: $pink;
+}
+
+.products_sidebar_filter[open] .products_sidebar_title_icon {
+    fill: $pink;
 }
 
 .products_sidebar_title {
@@ -267,6 +277,8 @@ body {
   padding: 10px;
   display: block;
 }
+
+
 
 .products_sidebar_drop {
     padding: 10px;
@@ -300,7 +312,7 @@ body {
   display: flex;
   gap: 20px;
   padding-left: 30px;
-  
+  z-index: 1000;
 }
 
 .products_sidebar_drop_sorting_input {
@@ -481,6 +493,18 @@ body {
 
 .advantages_pic:hover {
     transform: rotate(360deg);
+}
+
+.advantages_delivery:hover {
+    transform: scale(1.1);
+}
+
+.sale:hover {
+    transform: scale(1.1);
+}
+
+.quality:hover {
+    transform: scale(1.1);
 }
 
 .advantages_title {
@@ -800,4 +824,108 @@ body {
 
 .products_href_product {
     padding-bottom: 65px;
+}
+
+// регестрация 
+.registration_wrap {
+    margin-top: 60px;
+    margin-bottom: 96px;
+}
+
+.registration_fields {
+    display: flex;
+    flex-direction: column;
+}
+
+// .registration_rigth {
+//     width: 360px;
+// }
+
+
+.registration_fields_text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    
+}
+.registration_fields_input {
+    color: #222;
+    padding: 13px 10px 16px 17px;
+    margin-bottom: 20px;
+}
+
+.registration_fields_input:hover {
+        transform: scale(1.05);
+    }
+
+.registration_fields_radio {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.registration_fields_text_mini {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+
+    color: #B1B1B1;
+}
+.registration_button {
+    margin-top: 49px;
+}
+
+.registration_link {
+    border: 1px solid #F16D7F;
+    padding: 15px 39px 14px 39px;
+    color: #fff;
+    // font-size: 16px;
+    text-decoration: none;
+    transition: 0.4s;
+    background-color: #F16D7F;
+}
+
+.registration_link:hover {
+    background-color: #E05C6E;
+}
+
+.registration_link:hover .fa-long-arrow-alt-right {
+    transform: translateX(10px);
+}
+
+.fa-long-arrow-alt-right {
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.registration_content {
+    display: flex;
+}
+
+.registration_left {
+    margin-left: 120px;
+}
+
+.registration_left_text {
+    color: #222;
+    font-size: 24px;
+    line-height: 29px;
+    padding-bottom: 22px;
+    font-weight: 300;
+
+}
+.fa-check {
+    padding-right: 20px;
+    
+}
+.registration_list {
+    list-style-type: none;
+    color: #222;
+    font-size: 24px;
+    line-height: 29px;
+    padding-bottom: 20px;
+    font-weight: 300;
+    padding-bottom: 16px;
 }
