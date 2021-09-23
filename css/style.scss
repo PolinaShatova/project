@@ -26,6 +26,11 @@ body {
   background-color: #222;
   color: #fff;
   padding: 18px 0;
+  position: relative;
+}
+
+.header button {
+    background-color: transparent;
 }
 
 .header_wrap {
@@ -49,12 +54,83 @@ body {
   margin-left: 33px;
 }
 
+// навигация
+.main_nav {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 230px;
+    padding: 35px;
+    height: 694px;
+    background-color: #fff;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.main_nav_open {
+    display: block;
+}
+
+.main_nav_close {
+    display: none;
+}
+
+.main_nav_title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.main_nav_small {
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    margin-bottom: 12px;
+}
+
+.main_nav_list {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.main_nav_link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    &:hover {
+        color: #000;
+        text-decoration: underline;
+    }
+}
+
+.main_nav_item {
+    margin-bottom: 11px;
+}
+
+.main_nav_wrap {
+    position: relative;
+    width: 100%;
+}
+
+.main_nav_close_btn {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    border: none;
+    transition: 0.5s;
+    &:hover {
+        transform: rotate(90deg);
+    }
+}
+
+// интро - розовый блок
+
 .intro {
   background-color: #F1E4E6;
   margin-bottom: 90px;
 }
-
-// интро - розовый блок
 
 .intro_wrap {
   height: 764px;
@@ -916,7 +992,7 @@ body {
     font-weight: 300;
 
 }
-.fa-check {
+.registration_list_check {
     padding-right: 20px;
     
 }
