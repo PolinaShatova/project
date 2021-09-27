@@ -1,0 +1,72 @@
+.intro {
+  background-color: #f1e4e6;
+  margin-bottom: 90px;
+  height: 764px;
+  @media (max-width: 1200px) {
+    height: 368px;
+    margin-bottom: 20px;
+  }
+}
+
+.intro_wrap {
+  height: 764px;
+  background-image: url("../img/man_intro.png");
+  background-repeat: no-repeat;
+  background-position: -15px bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+@media (max-width: 1200px) {
+  .intro_wrap {
+    height: 368px;
+    background-size: contain;
+    background-position: 10px bottom;
+  }
+}
+
+.intro_title {
+  color: #222;
+  width: 410px;
+  border-left: 15px solid #f16d7f;
+  padding-left: 15px;
+  margin-right: 70px;
+
+  @media (max-width: 1200px) {
+    margin-right: 0;
+    width: auto;
+  }
+}
+
+.intro_title_big {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+
+  @media (max-width: 1200px) {
+    font-size: 44px;
+    line-height: 53px;
+  }
+}
+
+.intro_title_small {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+
+  @media (max-width: 1200px) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+.intro_title_pink {
+  color: #f16d7f;
+}
