@@ -284,6 +284,12 @@ $width_tablet: 1200px;
   transition: 1s;
 }
 
+.product_close {
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+
 .product_overlay {
   position: absolute;
   width: 100%;
@@ -404,6 +410,10 @@ $width_tablet: 1200px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  @media (max-width: 770px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 
 .footer_text {
@@ -411,6 +421,10 @@ $width_tablet: 1200px;
   margin-bottom: 30px;
   font-size: 16px;
   line-height: 19px;
+  @media (max-width: 770px) {
+    margin-bottom: 10px;
+    margin-top: 7px;
+  }
 }
 
 .footer_logo {
@@ -419,6 +433,9 @@ $width_tablet: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  @media (max-width: 770px) {
+    margin-top: 43px;
+  }
 }
 
 .footer_logo_link {
@@ -504,7 +521,21 @@ $width_tablet: 1200px;
   position: relative;
   padding-bottom: $shift;
   border: #eaeaea;
+  height: 777px;
 }
+
+.slider_wrap {
+  @media (max-width: 1200px) {
+    height: 624px;
+  }
+}
+
+.slider_img {
+  @media (max-width: 1200px) {
+    height: 565px;
+  }
+}
+
 .slider_btn {
   background: rgba(42, 42, 42, 0.15);
   padding: 10px;
@@ -616,6 +647,7 @@ $width_tablet: 1200px;
   color: #222;
   padding: 13px 10px 16px 17px;
   margin-bottom: 20px;
+  width: 360px;
 }
 
 .registration_fields_input:hover {
@@ -667,6 +699,9 @@ $width_tablet: 1200px;
 
 .registration_left {
   margin-left: 120px;
+  @media (max-width: 1200px) {
+    margin-left: 22px;
+  }
 }
 
 .registration_left_text {
@@ -675,6 +710,10 @@ $width_tablet: 1200px;
   line-height: 29px;
   padding-bottom: 22px;
   font-weight: 300;
+  @media (max-width: 1200px) {
+    font-size: 18px;
+    line-height: 19px;
+  }
 }
 .registration_list_check {
   padding-right: 20px;
@@ -687,6 +726,11 @@ $width_tablet: 1200px;
   padding-bottom: 20px;
   font-weight: 300;
   padding-bottom: 16px;
+  @media (max-width: 1200px) {
+    font-size: 18px;
+    line-height: 19px;
+    padding-bottom: 25px;
+  }
 }
 
 // страница корзины
@@ -696,6 +740,9 @@ $width_tablet: 1200px;
   margin-top: 45px;
   margin-bottom: 90px;
   justify-content: space-between;
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
 }
 
 .cart-product {
@@ -710,11 +757,13 @@ $width_tablet: 1200px;
   color: #222222;
   margin-bottom: 22px;
   width: 262px;
+  margin-right: 50px;
 }
 
 .cart-left-content {
   margin-top: 22px;
   margin-left: 31px;
+  position: relative;
 }
 
 .cart-left-content-div {
@@ -723,15 +772,20 @@ $width_tablet: 1200px;
 
 .cart-left-content-button {
   text-decoration: none;
-  margin-left: 25px;
   border: none;
   background-color: #fff;
   color: #575757;
-  font-size: 18px;
+  font-size: 23px;
   padding-right: 10px;
+  position: absolute;
+  right: 10px;
 
   :hover {
     transform: scale(1.1);
+  }
+
+  @media (max-width: 1200px) {
+    right: -135px;
   }
 }
 
@@ -758,6 +812,10 @@ $width_tablet: 1200px;
   margin-top: 70px;
   display: flex;
   justify-content: space-between;
+  :hover {
+    color: #fff;
+    background-color: #a4a4a4;
+  }
 }
 
 .cart-link {
@@ -778,6 +836,9 @@ $width_tablet: 1200px;
   display: flex;
   flex-direction: column;
   margin-top: 50px;
+  :hover {
+    transform: scale(1.05);
+  }
 }
 
 .cart-right-adress-text {
@@ -811,6 +872,12 @@ $width_tablet: 1200px;
   }
 }
 
+.cart-right {
+  @media (max-width: 1200px) {
+    display: flex;
+  }
+}
+
 .cart-right-adress-text-big {
   font-weight: 300;
   font-size: 16px;
@@ -826,9 +893,13 @@ $width_tablet: 1200px;
 
 .cart-right-total {
   margin-top: 70px;
-  padding-bottom: 70px;
   padding-top: 50px;
   background-color: #f5f3f3;
+  width: 360px;
+  height: 214px;
+  @media (max-width: 1200px) {
+    margin-left: 10px;
+  }
 }
 
 .cart-right-total-text {
@@ -847,8 +918,8 @@ $width_tablet: 1200px;
   text-decoration: none;
   transition: 0.4s;
   background-color: #f16d7f;
-  margin-left: 60px;
+  margin-left: 45px;
   :hover {
-    transform: scale(1.1);
+    transform: scale(1.25);
   }
 }

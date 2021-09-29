@@ -15,13 +15,18 @@ body {
   padding-right: 16px;
   box-sizing: content-box;
   // outline: 1px solid red;
-}
 
-@media (max-width: 1200px) {
-  .wrap {
+  @media (max-width: 1200px) {
     width: 753px;
     padding-left: 16px;
     padding-right: 16px;
+    // outline: 1px solid red;
+  }
+
+  @media (max-width: 770px) {
+    width: 356px;
+    padding-left: 13px;
+    padding-right: 13px;
     outline: 1px solid red;
   }
 }
