@@ -1,0 +1,88 @@
+.categories_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 90px;
+}
+
+.categories_item {
+  width: 360px;
+  height: 260px;
+  background-color: #c4c4c4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+
+  @media (max-width: $width_tablet) {
+    width: 232px;
+    height: 167px;
+  }
+
+  @media (max-width: 770px) {
+    width: 354px;
+    margin-bottom: 32px;
+    height: 247px;
+  }
+}
+
+.categories_item_women {
+  background-image: url("../img/for_women.jpg");
+}
+
+.categories_item_men {
+  background-image: url("../img/for_men.jpg");
+}
+
+.categories_item_kids {
+  background-image: url("../img/for_kids.jpg");
+}
+
+.categories_item_acc {
+  background-image: url("../img/accesories.jpg");
+  margin-top: 20px;
+  width: 100%;
+  height: 180px;
+
+  @media (max-width: $width_tablet) {
+    height: 116px;
+  }
+
+  @media (max-width: 770px) {
+    height: 111px;
+    width: 354px;
+    margin-top: 0;
+  }
+}
+
+.categories_title_pink {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f16d7f;
+}
+
+.categories_title_white {
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+}
+
+.categories_item_link {
+  text-decoration: none;
+}
+
+.categories_item_link:hover {
+  transform: scale(1.25);
+}

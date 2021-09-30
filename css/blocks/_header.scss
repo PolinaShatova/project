@@ -1,0 +1,45 @@
+.header {
+  background-color: #222;
+  color: #fff;
+  padding: 18px 0;
+  position: relative;
+}
+
+.header button {
+  background-color: transparent;
+  border: none;
+  margin-top: 7px;
+}
+
+.header_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.header_logo {
+  margin-right: 40px;
+}
+
+.header_registry {
+  margin-left: 33px;
+  @media (max-width: 770px) {
+    display: none;
+  }
+}
+
+.header_basket {
+  margin-left: 33px;
+  @media (max-width: 770px) {
+    display: none;
+  }
+}
+
+.header_menu {
+  @media (max-width: 770px) {
+    margin-top: 10px;
+  }
+}
