@@ -37,3 +37,9 @@
     display: none;
   }
 }
+
+.header_menu {
+  @media (max-width: 770px) {
+    margin-top: 10px;
+  }
+}
